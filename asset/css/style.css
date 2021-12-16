@@ -1,0 +1,143 @@
+:root {
+    --darker-blue: #131261;
+    --lighter-blue: #12d1f3cb;
+    --blackish: #000000e0;
+    --bright: #00000025;
+}
+
+* {
+
+    font-family: Andalé Mono, Lucida Console, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: var(--lighter-blue);
+}
+
+a:hover{
+        box-shadow: inset 0px 0px 8px white;
+}
+
+main{
+    background-color: #e8e4ee;
+    color: var(--darker-blue);
+}
+
+header {
+    display: flex;
+    flex-direction: colomn;
+    flex: 1 0 100%;
+    padding: 0.5rem;
+    transition: flex-basis 500ms linear;
+    background-color: var(--blackish);
+}
+
+header h1{
+    flex-wrap: wrap;
+    float: left;
+    width: auto;
+}
+
+header nav{
+    display: wrap;
+    float: right;
+    margin: 2rem 0rem;
+    margin-left: auto;
+}
+
+header nav a {
+    right: 0%;
+    margin:0rem 1.5rem 2rem;
+}
+
+h1{
+    margin: 1rem;
+    background-color: var(--lighter-blue);
+    font-size: 50px;
+}
+
+h2{
+    margin: 1rem;
+    font-size: 50px;
+}
+
+.subtitle{
+    height: 300px;
+    display: flex;
+    background-image:linear-gradient(to bottom, #cc2b5e , #753a88);
+    color: white;
+}
+
+.subtitle-line{
+    display:flex;
+    float: right;
+    margin-left: auto;
+    font-size: 30px;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.left-content {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 25%;
+    margin: 1rem 0.5rem;
+}
+
+.left-content:hover {
+    box-shadow: inset 0px 0px 8px white;
+}
+
+
+.right-content {
+    float: right;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 1rem 0.5rem;
+}
+
+.work-hilight{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+    background-image: url(../img/xps-dpbXgTh0Lac-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.work-hilight p{
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+.work {
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 150px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .work{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .work {
+        flex: 0 0 50%;
+        min-width: 100%;
+    }
+}
